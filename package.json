@@ -6,5 +6,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@red-cup-engineering/javascript-node-services-section": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/agent-computer-system-engineering-services-section.git"
   }
 }
