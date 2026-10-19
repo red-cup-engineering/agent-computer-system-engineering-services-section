@@ -1,24 +1,20 @@
-[submodule "lib/relating"]
-	path = lib/relating
-	url = https://github.com/emsenn/relating.git
-[submodule "animating"]
-	path = animating
-	url = https://github.com/emsenn/2026-08-01-animating.git
-[submodule "communicating"]
-	path = communicating
-	url = https://github.com/emsenn/communicating.git
-[submodule "computing"]
-	path = computing
-	url = https://github.com/emsenn/computing.git
-[submodule "gaming"]
-	path = gaming
-	url = https://github.com/emsenn/gaming.git
-[submodule "knowing"]
-	path = knowing
-	url = https://github.com/emsenn/knowing.git
-[submodule "playing"]
-	path = playing
-	url = https://github.com/emsenn/playing.git
-[submodule "socializing"]
-	path = socializing
-	url = https://github.com/emsenn/socializing.git
+[submodule "agent-organization-engine"]
+	path = apps/agent-organization-engine
+	url = https://github.com/red-cup-engineering/agent-organization-engine.git
+	branch = main
+[submodule "resolving-an-identifier"]
+	path = services/task-management-computer-system-engineering-services-section/services/identifier-resolution-services-section/services/resolving-an-identifier
+	url = https://github.com/red-cup-engineering/resolving-an-identifier.git
+	branch = main
+[submodule "multi-agent-computer-system-engineering-services-section"]
+	path = services/multi-agent-computer-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/multi-agent-computer-system-engineering-services-section.git
+	branch = main
+[submodule "agent-harness-computer-system-engineering-services-section"]
+	path = services/agent-harness-computer-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/agent-harness-computer-system-engineering-services-section.git
+	branch = main
+[submodule "agent-computer-platform-system-engineering-services-section"]
+	path = services/agent-computer-platform-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/agent-computer-platform-system-engineering-services-section.git
+	branch = main
