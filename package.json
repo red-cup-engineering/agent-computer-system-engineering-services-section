@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Groups the reusable apps and specialized engineering services that make up the agent-computing corpus (formerly relational-computing).",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@red-cup-engineering/javascript-node-services-section": "workspace:*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/agent-computer-system-engineering-services-section.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
