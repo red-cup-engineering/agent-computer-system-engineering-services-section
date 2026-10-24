@@ -3,7 +3,17 @@ name: Execute the public agent-family first experience
 on:
   push:
     branches: [main]
+    paths:
+      - examples/agent-family-arena.json
+      - .github/workflows/agent-first-experience.yml
   pull_request:
+    paths:
+      - examples/agent-family-arena.json
+      - .github/workflows/agent-first-experience.yml
+
+concurrency:
+  group: agent-first-experience-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
