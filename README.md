@@ -13,6 +13,40 @@ relate information, use tools, and work through bounded runtime interfaces.
 It is a **source composition and engineering register**, not a single agent
 you can install, a hosted assistant, or a command-line application.
 
+## See an actual agentic system perform work
+
+The public [three-move arena example](examples/agent-family-arena.json)
+is a runnable input for the **existing** `multi-agent-engine` action
+dispatcher. It uses two locally labeled players, two different engines,
+and a causal dependency. A real first run returns the original action
+receipts rather than merely displaying a README or mocking an agent.
+
+With Node.js 22.18+ and the 561 Group package registry configured:
+
+```sh
+npm install @red-cup-engineering/agentic-orchestration-platform@0.2.0 --registry=https://registry.561.group/
+./node_modules/.bin/multi-agent-engine arena play < examples/agent-family-arena.json
+```
+
+The `relation` engine canonicalizes JSON, the `play` engine runs its
+existing design action, and a third move waits on both. This demonstrates
+source-owned action **composition**, not hosted agents, authenticated Actor
+offices, durable autonomous behavior, or public MetroPlat access.
+See the [first-experience walkthrough](examples/README.md) for the actual
+interfaces and what their receipts mean.
+
+The separately maintained
+[attention-allocation readout](https://github.com/red-cup-engineering/attention-allocation-readout-service)
+offers a second concrete starting point: `attention-plan --run-example`
+uses the original finite-budget mathematical selection to choose among
+explicitly scored obstructions. It **does not execute those obstructions**.
+
+This parent is a **public source map**. Its
+[Agent Organization Engine](https://github.com/red-cup-engineering/agent-organization-engine)
+source is currently private and requires separate authorized access.
+The package installation above depends on its registry availability;
+the public map alone is not a copy of private implementation source.
+
 ## Where to begin
 
 The directories below are the current checked-in entry points. A Git
