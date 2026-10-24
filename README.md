@@ -7,63 +7,56 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-The Agent Computer System Services Section maintains knowledge and practices for this service domain.
+**An engineering home for agent computer systems.** This repository connects
+separately maintained engineering components that equip an agent to compute,
+relate information, use tools, and work through bounded runtime interfaces.
+It is a **source composition and engineering register**, not a single agent
+you can install, a hosted assistant, or a command-line application.
 
-Its material is organized by artifact role under `content/`; specialized
-subdomains continue under `services/`.
+## Where to begin
 
-This section holds the CODE register of the agent-computing corpus (formerly
-relational-computing), migrated from engineering-side legacy
-`2026-08-11-agential-relationality`. Its paired THEORY register — the dated
-research papers this corpus's development produced — lives sciences-side at
-`computer-science-services-section/services/agential-semioverse-repository-services-section/`.
+The directories below are the current checked-in entry points. A Git
+submodule points to a separate repository; follow its own README and package
+manifest for implementation and usage.
 
-Renamed from `relational-computer-system-services-section` on 2026-08-21, at the
-owner's direction, as the corpus's subject was recognized as the Agent
-(top-level entity).
+| Entry | What you will find |
+| --- | --- |
+| [Agent Organization Engine](apps/agent-organization-engine) | The composed engine providing nine related agent faculty packages; package-level entry points live in its own `lib/` packages, **not** as separate apps at this repository root |
+| [Agent harness systems](services/agent-harness-computer-system-engineering-services-section) | The boundary that equips and constrains one agent computer system |
+| [Multi-agent computer systems](services/multi-agent-computer-system-engineering-services-section) | Engineering for systems constituted across multiple agents, separate from platform hosting |
+| [Agent computer platforms](services/agent-computer-platform-system-engineering-services-section) | The durable hosting and operating boundaries for agent computer systems |
+| [Task-management systems](services/task-management-computer-system-engineering-services-section) | The local engineering area for resolving identifiers and organizing task operations |
 
-## Service specializations
+Read [the Agent Organization Engine source](https://github.com/red-cup-engineering/agent-organization-engine)
+for faculty exports, tests, and its current architectural boundaries. Its
+root package is a grouping manifest, **not** a root-level CLI. Its faculties
+are `relating`, `communicating`, `knowing`, `playing`, `animating`,
+`computing`, `socializing`, `gaming`, and `organizing`.
 
-- Modeled Union Dimension is an Operations term for a Union territory operated
-  through a conformant engine. It does not own an engineering package here;
-  FAE, FeltOS, and their existing component services retain their own boundaries.
-- `services/agent-harness-computer-system-engineering-services-section/`
-  engineers the runtime boundary which equips and constrains one agent
-  computer system. It is neither a hosting platform nor a multi-agent system.
-- `services/multi-agent-computer-system-engineering-services-section/`
-  specializes the reusable corpus to computer systems constituted across
-  multiple agents.
-- `services/agent-computer-platform-system-engineering-services-section/`
-  specializes this domain to platforms through which agent computer systems
-  are hosted and operated.
-- `services/attention-allocation-computer-system-engineering-services-section/`
-  holds the bounded planner that chooses a feasible, benefit-ranked next set
-  of obstructions for one agent system to reconcile.
-- `services/climate-research-agent-services-section/` holds the agent that
-  acquires bounded climate-data carriers and produces journaled research
-  packets; its scientific sources and uncertainty claims remain explicit
-  inputs and outputs rather than an ownership claim by the runtime.
-- `services/task-management-computer-system-engineering-services-section/`
-  holds the identifier resolver and task-board operations that let an agent
-  locate a seated record, hand a task to an office, and derive outstanding
-  obligations by running the task's goal.
-- `services/language-computer-system-engineering-services-section/` holds
-  applications that compose language fibers into observable language-system
-  behavior without taking ownership of the underlying linguistic corpus.
+## What exists here
 
-## Apps
+At the current repository root, `apps/` holds the
+`agent-organization-engine` submodule, while `services/` holds the
+specializations above. An older README treated faculty names as if they were separate applications
+at this root. That inventory is obsolete. Follow the actual engine submodule
+and its package manifests rather than guessing an installed application path.
 
-- `apps/relating`
-- `apps/knowing`
-- `apps/animating`
-- `apps/gaming`
+The repository also carries a code-oriented register of earlier work on the
+agent-computing corpus (previously called relational computing). Its paired
+theory/research register is science-side, under the agent-related material in
+[the Computer Science Services Section](https://github.com/lenticule-science/computer-science-services-section).
+Source presence alone is not evidence of a running deployment or of complete
+standards conformance.
 
-Communicating has no app here: it is a science-side package,
-`@red-cup-engineering/agentic-communication-engine`, consumed directly (see e.g.
-`apps/animating`'s dependency on it) rather than re-hosted as a Gen-1 app in
-this section. A prior `apps/communicating` held only an orphaned `dist/` with
-no `package.json` or `src/` (unbuildable, unconsumed) and was removed
-2026-09-16.
+## Scope and limitations
 
-The remaining corpus apps specialize under the multi-agent computer system
-engineering section.
+A **single agent system**, a **multi-agent system**, and a **platform hosting
+agent systems** are different engineering responsibilities. Their repositories
+own their respective executable components, compatibility claims, tests, and
+release status. This section indexes and composes them; it does not inherit
+their deployment guarantees, privileges, or runtime authority.
+
+Changes to the family should start with the owning component's current
+Issues, pull requests, branches, README, and package exports before changing
+this index. That prevents a public-facing summary from getting ahead of the
+software it describes.
