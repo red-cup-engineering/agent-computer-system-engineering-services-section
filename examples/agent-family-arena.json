@@ -1,0 +1,45 @@
+{
+  "players": [
+    {
+      "id": "reader",
+      "role": "reader"
+    },
+    {
+      "id": "designer",
+      "role": "designer"
+    }
+  ],
+  "moves": [
+    {
+      "id": "normalize-input",
+      "player": "reader",
+      "engine": "relation",
+      "argv": [
+        "canonicalize"
+      ],
+      "stdin": "{\"z\":9,\"a\":1}"
+    },
+    {
+      "id": "design",
+      "player": "designer",
+      "engine": "play",
+      "argv": [
+        "design"
+      ],
+      "stdin": "{\"entries\":[{\"locus\":[],\"act\":\"daimon\"}]}"
+    },
+    {
+      "id": "normalize-output",
+      "player": "reader",
+      "engine": "relation",
+      "argv": [
+        "canonicalize"
+      ],
+      "stdin": "{\"c\":3,\"b\":2}",
+      "after": [
+        "normalize-input",
+        "design"
+      ]
+    }
+  ]
+}

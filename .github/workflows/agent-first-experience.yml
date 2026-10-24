@@ -1,0 +1,46 @@
+name: Execute the public agent-family first experience
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - examples/agent-family-arena.json
+      - .github/workflows/agent-first-experience.yml
+  pull_request:
+    paths:
+      - examples/agent-family-arena.json
+      - .github/workflows/agent-first-experience.yml
+
+concurrency:
+  group: agent-first-experience-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  consumer-experience:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: '24'
+      - name: Install the existing agentic orchestration package as an outside consumer
+        run: |
+          mkdir -p "$RUNNER_TEMP/agent-experience"
+          npm install --prefix "$RUNNER_TEMP/agent-experience"             @red-cup-engineering/agentic-orchestration-platform@0.2.0             --registry=https://registry.561.group/             --ignore-scripts --no-package-lock --no-audit --no-fund --fetch-retries=1
+      - name: Execute three real engine moves from the public scenario
+        run: |
+          ARENA_MAX_CONCURRENT=2 "$RUNNER_TEMP/agent-experience/node_modules/.bin/multi-agent-engine"             arena play < examples/agent-family-arena.json > "$RUNNER_TEMP/agent-experience/actual.json"
+          node --input-type=module -e '
+            import { readFileSync } from "node:fs";
+            const event=JSON.parse(readFileSync(process.argv[1], "utf8"));
+            console.log("Actual orchestration receipts:",event.results.map(x=>x.id + ":" + x.status + ":" + x.stdout.trim().slice(0,200)).join(" | "));
+            if (!event.ok || event.results.length!==3 || event.results.some(x=>x.status!=="succeeded")) {
+              throw new Error("published consumer package did not execute the three moves");
+            }
+          ' "$RUNNER_TEMP/agent-experience/actual.json"
