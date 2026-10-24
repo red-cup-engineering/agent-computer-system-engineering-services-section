@@ -37,11 +37,9 @@ are `relating`, `communicating`, `knowing`, `playing`, `animating`,
 
 At the current repository root, `apps/` holds the
 `agent-organization-engine` submodule, while `services/` holds the
-specializations above. This replaces an older README inventory that described
-`apps/relating`, `apps/knowing`, `apps/animating`, and `apps/gaming`
-as direct children. Those paths are **not** the current layout. Look inside
-the engine's own packages rather than interpreting legacy names as installed
-applications.
+specializations above. An older README treated faculty names as if they were separate applications
+at this root. That inventory is obsolete. Follow the actual engine submodule
+and its package manifests rather than guessing an installed application path.
 
 The repository also carries a code-oriented register of earlier work on the
 agent-computing corpus (previously called relational computing). Its paired
