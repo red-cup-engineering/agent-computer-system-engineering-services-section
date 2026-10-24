@@ -21,11 +21,13 @@ dispatcher. It uses two locally labeled players, two different engines,
 and a causal dependency. A real first run returns the original action
 receipts rather than merely displaying a README or mocking an agent.
 
-With Node.js 22.18+ and the 561 Group package registry configured:
+With Node.js 22.18+, from this checkout, install into an isolated
+scratch directory (the section itself is a workspace composition):
 
 ```sh
-npm install @red-cup-engineering/agentic-orchestration-platform@0.2.0 --registry=https://registry.561.group/
-./node_modules/.bin/multi-agent-engine arena play < examples/agent-family-arena.json
+example_dir="$(mktemp -d)"
+npm install --prefix "$example_dir" @red-cup-engineering/agentic-orchestration-platform@0.2.0 --registry=https://registry.561.group/
+"$example_dir/node_modules/.bin/multi-agent-engine" arena play < examples/agent-family-arena.json
 ```
 
 The `relation` engine canonicalizes JSON, the `play` engine runs its
