@@ -38,6 +38,26 @@ a green result confirms only this published-package scenario and its output,
 not a live hosted service. Check the workflow's execution result before
 claiming that receiving succeeded.
 
+## Independently observed first run
+
+[GitHub Actions run 40134596039](https://github.com/red-cup-engineering/agent-computer-system-engineering-services-section/actions/runs/40134596039)
+installed the existing version `0.2.0` package into an isolated consumer
+directory, then ran **this exact JSON file** with no substituted engine.
+The three receipts were:
+
+```text
+normalize-input   succeeded   {"a":1,"z":9}
+design            succeeded   {"entries":[{"locus":[],"reading":"stable"}]}
+normalize-output  succeeded   {"b":2,"c":3}
+```
+
+The dependency installation was substantial: the runner reported **810
+packages in approximately four minutes**. That is a real onboarding and
+distribution cost, not a claim that this experience is lightweight. The
+result establishes this particular packaged consumer route; it does not
+prove the private source checkout is publicly accessible or that a deployed
+agent system exists.
+
 ## What this does and does not demonstrate
 
 This experience exercises genuine components and their cross-engine
