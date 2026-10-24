@@ -5,7 +5,7 @@
   "description": "Groups the reusable apps and specialized engineering services that make up the agent-computing corpus (formerly relational-computing).",
   "license": "MIT",
   "dependencies": {
-    "@red-cup-engineering/javascript-node-engineering-services-section": "workspace:*"
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
   },
   "repository": {
     "type": "git",
