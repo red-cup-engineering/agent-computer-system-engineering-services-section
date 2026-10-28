@@ -1,4 +1,4 @@
-# Agent Computer System Engineering Services Section
+# Agentic Computer System Engineering Services Section
 
 <!-- 561-group-standards:badges:start -->
 [![Red Cup Engineering](https://img.shields.io/badge/561%20Group-Red%20Cup%20Engineering-c0392b)](https://github.com/red-cup-engineering)
@@ -57,6 +57,7 @@ manifest for implementation and usage.
 
 | Entry | What you will find |
 | --- | --- |
+| [Agentic Character engineering](services/agentic-character-engineering-services-section) | The shared Science-backed Character declaration and categorical Character/session implementation |
 | [Agent Organization Engine](apps/agent-organization-engine) | The composed engine providing nine related agent faculty packages; package-level entry points live in its own `lib/` packages, **not** as separate apps at this repository root |
 | [Agent harness systems](services/agent-harness-computer-system-engineering-services-section) | The boundary that equips and constrains one agent computer system |
 | [Multi-agent computer systems](services/multi-agent-computer-system-engineering-services-section) | Engineering for systems constituted across multiple agents, separate from platform hosting |

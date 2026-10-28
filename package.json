@@ -1,5 +1,5 @@
 {
-  "name": "@red-cup-engineering/agent-computer-system-engineering-services-section",
+  "name": "@red-cup-engineering/agentic-computer-system-engineering-services-section",
   "version": "0.1.0",
   "type": "module",
   "description": "Groups the reusable apps and specialized engineering services that make up the agent-computing corpus (formerly relational-computing).",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/red-cup-engineering/agent-computer-system-engineering-services-section.git"
+    "url": "git+https://github.com/red-cup-engineering/agentic-computer-system-engineering-services-section.git"
   },
   "funding": {
     "type": "individual",
