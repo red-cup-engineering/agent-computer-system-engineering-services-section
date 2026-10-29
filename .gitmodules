@@ -22,3 +22,7 @@
 	path = services/agentic-character-engineering-services-section
 	url = https://github.com/red-cup-engineering/agentic-character-engineering-services-section.git
 	branch = main
+[submodule "services/agentic-distributed-computer-system-engineering-services-section"]
+	path = services/agentic-distributed-computer-system-engineering-services-section
+	url = https://github.com/red-cup-engineering/agentic-distributed-computer-system-engineering-services-section.git
+	branch = main
