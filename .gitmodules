@@ -26,3 +26,6 @@
 	path = services/agentic-distributed-computer-system-engineering-services-section
 	url = https://github.com/red-cup-engineering/agentic-distributed-computer-system-engineering-services-section.git
 	branch = main
+[submodule "apps/agentic-computer-system-engine"]
+	path = apps/agentic-computer-system-engine
+	url = https://github.com/red-cup-engineering/agentic-computer-system-engine.git
