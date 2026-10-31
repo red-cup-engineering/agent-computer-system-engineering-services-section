@@ -30,7 +30,7 @@ Paths are relative to `/home/emsenn/info/lib/emsenn/services/561-group/services/
 
 ## 1. The theory this specification realizes
 
-These statements are the house's, taken from the held note and the dreaming module. They are not new.
+These statements are the Group's, taken from the held note and the dreaming module. They are not new.
 
 1. The trace field is the semiosphere. Memory is the field the next articulation is read against (HELD NOTE, fact 1).
 2. Dreaming is a generative re-settling that emits inert proposals. A dream reads a memory window through the sheaf, finds latent cells, and opens each as a bottom-opened `open-question` cell. A bottom-opened cell is a second fact, "the cell was asked"; it is never a fifth value and never determines the cell (HELD NOTE, facts 6 and "The design").
@@ -41,9 +41,9 @@ These statements are the house's, taken from the held note and the dreaming modu
 7. A question is not work merely because it is asked. The Senior Engineer's skill states: "Do not make a question, idea, assistant interpretation, or correction into work merely to persist it" (`engineering-services-section/lib/agency/skills/realize-research-grounded-engineering-work/SKILL.md:77`). A dream proposal is therefore carried as an unsettled opening addressed to an office, with no allocation, price or taking, until that office decides to allocate it.
 8. Resources follow science, engineering, operations, then the 561 Group. The dream is generic engineering and carries no section's data; the job record that schedules it is operations and the node's own (`science-engineering-operations-parameterize-in-order`).
 
-## 2. What the house holds, judged
+## 2. What the Group holds, judged
 
-The house holds three implementations or fragments of dreaming. Each is judged against the theory above.
+The Group holds three implementations or fragments of dreaming. Each is judged against the theory above.
 
 | Held thing | Where | Judgment |
 |---|---|---|
@@ -52,7 +52,7 @@ The house holds three implementations or fragments of dreaming. Each is judged a
 | `dreaming-state-record` and `dreaming` schemas | `science-services-section/services/philosophy-services-section/services/relationality-services-section/services/agency-services-section/schemas/dreaming-state-record.schema.json` | Aligned, not used here. It describes a fiber that is dreaming (sensory predicates suspended). It states that a dream-tick invokes no inferring morphism. The nightly job does not suspend any entity; it adopts only the rule that no inference is invoked. |
 | Node job declarations | `JOBS/*.json`, reader `engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/node-job.mjs:16-25,48-80,111` | Aligned. A job declares a cron `schedule` with a `timeZone` or `everySeconds`, `maxSeconds` from 1 to 86400, `successExitStatus`, and `workingTree.custody` only when it writes the repository. `JOBS/launch-census.json` is the precedent for a daily cron job in `America/Chicago`. |
 
-The change is therefore small in schedule and large in code. The schedule is one job record. The code is a new function in the organization's `knowing` package, a record reader, an open-question sink and an entry script. No job record is written in the house yet, because a record that names a script that does not exist fails every night and adds load for nothing. The draft record is in section 6.
+The change is therefore small in schedule and large in code. The schedule is one job record. The code is a new function in the organization's `knowing` package, a record reader, an open-question sink and an entry script. No job record is written in the Group yet, because a record that names a script that does not exist fails every night and adds load for nothing. The draft record is in section 6.
 
 ## 3. Requirements
 
@@ -175,7 +175,7 @@ The Chief Engineering Officer or another office that did not fabricate the chang
 
 ## 8. Cloud slice
 
-One slice, in the repository that publishes `@red-cup-engineering/knowing`: add `latentCellDream`, the window reader, the board sink and `scripts/nightly-dream.mjs`, with the tests of C1 to C3, and open a pull request for the Chief Engineering Officer to receive. The house then writes `JOBS/nightly-dream.json` (C4) in a separate change under the Bare Cedar Fog operations section.
+One slice, in the repository that publishes `@red-cup-engineering/knowing`: add `latentCellDream`, the window reader, the board sink and `scripts/nightly-dream.mjs`, with the tests of C1 to C3, and open a pull request for the Chief Engineering Officer to receive. The Group then writes `JOBS/nightly-dream.json` (C4) in a separate change under the Bare Cedar Fog operations section.
 
 ## 9. Not yet derived
 
